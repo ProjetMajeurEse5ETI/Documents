@@ -1,0 +1,140 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0" version="24.7.17">
+  <diagram name="Page-1" id="4KpzUjIbO3mV9reML2ti">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="na4xzlSOXjRyufESY1Gj-1" value="Alimentation 30V/10A maximum 36V (Batterie)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="80" y="120" width="400" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="na4xzlSOXjRyufESY1Gj-2" value="&lt;div&gt;PCB 1 : Alimentation DC/DC de30V à 12V et 30V à 5V + mesure de courant du sytème + régulateur linéaire de 5V à 3.3V.&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="80" y="200" width="400" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="na4xzlSOXjRyufESY1Gj-3" value="PCB 2 : Pont en H et conditionnement des capteurs Hall des moteurs BLDC" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="220" y="280" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="na4xzlSOXjRyufESY1Gj-4" value="Moteur BLDC x2" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="380" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="na4xzlSOXjRyufESY1Gj-5" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="80" y="360" width="170" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="na4xzlSOXjRyufESY1Gj-6" value="Sequenceur" style="rounded=1;whiteSpace=wrap;html=1;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="150" y="390" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="na4xzlSOXjRyufESY1Gj-7" value="SPI" style="rounded=1;whiteSpace=wrap;html=1;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="450" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="na4xzlSOXjRyufESY1Gj-8" value="&lt;div&gt;STM32F3 Discovery&lt;/div&gt;&lt;div&gt;Exécuteur&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="95" y="390" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="na4xzlSOXjRyufESY1Gj-9" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="80" y="520" width="170" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="na4xzlSOXjRyufESY1Gj-10" value="SPI" style="rounded=1;whiteSpace=wrap;html=1;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="530" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="na4xzlSOXjRyufESY1Gj-11" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="na4xzlSOXjRyufESY1Gj-10" target="na4xzlSOXjRyufESY1Gj-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="560" as="sourcePoint" />
+            <mxPoint x="350" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="na4xzlSOXjRyufESY1Gj-12" value="UART" style="rounded=1;whiteSpace=wrap;html=1;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="70" y="570" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="na4xzlSOXjRyufESY1Gj-14" value="I2C" style="rounded=1;whiteSpace=wrap;html=1;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="210" y="570" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="na4xzlSOXjRyufESY1Gj-15" value="&lt;div&gt;STM32F4 Nucleo&lt;/div&gt;&lt;div&gt;Contrôleur&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="150" y="580" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="na4xzlSOXjRyufESY1Gj-16" value="Bras à 6 axes" style="rounded=1;whiteSpace=wrap;html=1;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="680" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="na4xzlSOXjRyufESY1Gj-19" value="Lidar" style="rounded=1;whiteSpace=wrap;html=1;rotation=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="170" y="680" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="na4xzlSOXjRyufESY1Gj-21" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="na4xzlSOXjRyufESY1Gj-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="620" as="sourcePoint" />
+            <mxPoint x="210" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="na4xzlSOXjRyufESY1Gj-23" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="270" y="520" width="110" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="na4xzlSOXjRyufESY1Gj-24" value="µC M0" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="560" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="na4xzlSOXjRyufESY1Gj-26" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="na4xzlSOXjRyufESY1Gj-14" target="na4xzlSOXjRyufESY1Gj-24">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="590" as="sourcePoint" />
+            <mxPoint x="470" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="na4xzlSOXjRyufESY1Gj-27" value="PCB Capteurs" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="280" y="600" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="na4xzlSOXjRyufESY1Gj-28" value="Télémètres" style="rounded=1;whiteSpace=wrap;html=1;rotation=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="400" y="530" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="na4xzlSOXjRyufESY1Gj-31" value="Capteur RFID" style="rounded=1;whiteSpace=wrap;html=1;rotation=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="400" y="590" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="na4xzlSOXjRyufESY1Gj-32" value="" style="endArrow=classic;html=1;rounded=0;exitX=-0.012;exitY=0.6;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.761;entryY=0.994;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="na4xzlSOXjRyufESY1Gj-28" target="na4xzlSOXjRyufESY1Gj-33">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="330" y="630" as="sourcePoint" />
+            <mxPoint x="380" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="na4xzlSOXjRyufESY1Gj-33" value="Condtionnements" style="rounded=1;whiteSpace=wrap;html=1;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="310" y="565" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="na4xzlSOXjRyufESY1Gj-34" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.199;entryY=1.012;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="na4xzlSOXjRyufESY1Gj-31" target="na4xzlSOXjRyufESY1Gj-33">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="610" as="sourcePoint" />
+            <mxPoint x="420" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="na4xzlSOXjRyufESY1Gj-35" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="na4xzlSOXjRyufESY1Gj-6" target="na4xzlSOXjRyufESY1Gj-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="390" as="sourcePoint" />
+            <mxPoint x="290" y="340" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="200" y="305" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="na4xzlSOXjRyufESY1Gj-36" value="Signaux de contrôle 6 par roue" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="310" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="na4xzlSOXjRyufESY1Gj-37" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.767;exitY=1.007;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="na4xzlSOXjRyufESY1Gj-3" target="na4xzlSOXjRyufESY1Gj-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="430" as="sourcePoint" />
+            <mxPoint x="370" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="na4xzlSOXjRyufESY1Gj-38" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="na4xzlSOXjRyufESY1Gj-4" target="na4xzlSOXjRyufESY1Gj-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="530" as="sourcePoint" />
+            <mxPoint x="390" y="480" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="420" y="500" />
+              <mxPoint x="200" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="na4xzlSOXjRyufESY1Gj-39" value="Signaux des capteurs Hall 3 par roue" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="250" y="460" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="na4xzlSOXjRyufESY1Gj-40" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.235;exitY=0.998;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="1" source="na4xzlSOXjRyufESY1Gj-9" target="na4xzlSOXjRyufESY1Gj-16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="130" y="680" as="sourcePoint" />
+            <mxPoint x="180" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
