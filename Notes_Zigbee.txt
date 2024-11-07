@@ -1,0 +1,75 @@
+Ref Card: Digi XBee® 802.15.4
+Software X-CTU for config
+
+
+Coordinator (computer)
+Router (not needed in the star topology)
+End device (STM_Master)
+
+Small power, few data
+
+Coordinator (all the big work)
+Better to use 868 MHz band/channel 0, so that WiFi does not interfere. Card is on 2.4GHz however
+
+
+
+
+End Device
+30meters indoors
+• TX Current: 						45 mA (@3.3 V)
+• RX Current: 						50 mA (@3.3 V)
+Power output						1mW
+RF Data Rate 						250,000 bps
+Serial Interface Data Rate (software selectable) 	1200 - 115200 bps
+							16 Direct Sequence Channels
+
+
+Mounting: PINs. Do we have the socket (optionnal) ?
+1		20
+
+
+
+
+10		11
+
+
+Pin # Name Direction Description
+1 VCC - Power supply
+10 GND - Ground
+
+2 DOUT Output UART Data Out
+4 DO8* Output Digital Output 8
+6 PWM0 / RSSI Output PWM Output 0 / RX Signal Strength Indicator
+7 PWM1 Output PWM Output 1
+13 ON / SLEEP Output Module Status Indicator
+
+3 DIN / CONFIG Input UART Data In
+5 RESET Input Module Reset (reset pulse must be at least 200 ns)
+9 DTR / SLEEP_RQ / DI8 Input Pin Sleep Control Line or Digital Input 8
+14 VREF Input Voltage Reference for A/D Inputs
+
+8 [reserved] - Do not connect
+
+
+11 AD4 / DIO4 Either Analog Input 4 or Digital I/O 4
+12 CTS / DIO7 Either Clear-to-Send Flow Control or Digital I/O 7
+15 Associate / AD5 / DIO5 Either Associated Indicator, Analog Input 5 or Digital I/O 5
+16 RTS / AD6 / DIO6 Either Request-to-Send Flow Control, Analog Input 6 or Digital I/O 6
+17 AD3 / DIO3 Either Analog Input 3 or Digital I/O 3
+18 AD2 / DIO2 Either Analog Input 2 or Digital I/O 2
+19 AD1 / DIO1 Either Analog Input 1 or Digital I/O 1
+20 AD0 / DIO0 Either Analog Input 0 or Digital I/O 0
+
+
+
+
+
+
+Input on PIN3. Left to HIGH when Idle
+Each data byte consists of a start bit (low), 8 data bits (least significant bit first) and a stop bit (high)
+Make Usual serial config to comm (baud rate, parity, start bits, stop bits, data bits).
+
+
+
+Default Transparent Mode. 
+All UART data received through the DI pin is queued up for RF transmission. When RF data is received, the data is sent out the DO pin.
